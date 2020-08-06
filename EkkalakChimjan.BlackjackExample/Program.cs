@@ -1,11 +1,11 @@
-﻿using EkkalakChimjan.Standard52Card;
+﻿using Supakit.Standard52Card;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EkkalakChimjan.BlackjackExample
+namespace Supakit.BlackjackExample
 {
     class Program
     {
