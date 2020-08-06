@@ -1,7 +1,7 @@
-﻿using EkkalakChimjan.Standard52Card;
+﻿using Supakit.Standard52Card;
 using System.Collections.Generic;
 
-namespace EkkalakChimjan.BlackjackExample
+namespace Supakit.BlackjackExample
 {
     internal class Blackjack
     {
