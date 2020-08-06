@@ -1,4 +1,4 @@
-﻿namespace EkkalakChimjan.Standard52Card
+﻿namespace Supakit.Standard52Card
 {
     public enum CardSuit
     {
