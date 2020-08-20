@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Supakit.Standard52Card
+namespace EkkalakChimjan.Standard52Card
 {
     public class Deck
     {
