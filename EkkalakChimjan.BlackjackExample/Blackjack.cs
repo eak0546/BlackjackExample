@@ -19,7 +19,7 @@ namespace EkkalakChimjan.BlackjackExample
             this.players = new List<Player>();
             this.allPlayerHands = new List<Hand>();
             this.deck = deck;
-        }
+        } 
 
         public void AddPlayer(Player player)
         {
