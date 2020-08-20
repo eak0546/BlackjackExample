@@ -1,13 +1,12 @@
-﻿
+﻿using EkkalakChimjan.Standard52Card;
 using System;
 using System.CodeDom;
-using Supakit.Standard52Card;
 using System.Collections.Generic;
 using System.Threading;
 
-namespace Supakit.BlackjackExample
+namespace EkkalakChimjan.BlackjackExample
 {
-    internal class Blackjack
+    public class Blackjack
     {
         private readonly List<Player> players;
         private readonly List<Hand> allPlayerHands;
@@ -27,8 +26,9 @@ namespace Supakit.BlackjackExample
             players.Add(player);
         }
 
-        private void initialCard()
+        public void initialCard()
         {
+            deck.Initialize();
             for (int i = 0; i < 2; i++)
             {
                 allPlayerHands.ForEach(hand => hand.AddCard(deck.Deal()));
@@ -122,7 +122,7 @@ namespace Supakit.BlackjackExample
             Console.WriteLine("{0}\n\n", playerHand.Player.Balance);
         }
 
-        public void Play()
+        public virtual void Play()
         {
             start:
             if (initialAllPlayersHand())
@@ -148,7 +148,7 @@ namespace Supakit.BlackjackExample
                 if (player.Money > 0)
                 {
                     player.ResetHands();
-                    allPlayerHands.AddRange(player.getAllHands());
+                    allPlayerHands.AddRange(player.GetAllHand());
                 }
                 else{
                     Console.WriteLine("\n{0} don't have money!!", player.Name);
